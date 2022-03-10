@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+****************
+      Head
+****************/-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Copy Cat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--
+****************
+      Body
+****************/-->
+<body>
+    <div id="container" class="container-fluid">
+    <!--
+        ****************
+            Navigation
+        ****************/-->
+    <nav class="navBar">
+        <div id="LeftButtonBox">
+           <img src="./assets/imgs/list.svg" alt="Hamburger Menu">
+           <img src="./assets/imgs/question-circle.svg" alt="Question Mark">
+           <!-- <i class="bi bi-list">Menu</i>
+           <i class="bi bi-question-circle">How</i> -->
+        </div>
+        <div id="TitleBox">
+          <h1>Wordle</h1>
+           <h6>(kinda)</h6> 
+        </div>
+        <div id="RightButtonBox">
+            <img src="./assets/imgs/bar-chart-line.svg" alt="Stats">
+           <img src="./assets/imgs/gear-fill.svg" alt="Settings">
+            <!-- <i class="bi bi-bar-chart-line">Stats</i> 
+            <i class="bi bi-gear-fill">Settings</i> -->
+        </div>
+    </nav>
+    <!--
+        ****************
+            Main
+        ****************/-->
+    <main id="main">
+        <div id="game">
+            <div id="gameGrid">
+                <div class='row row1'>
+                    <div class="box box1"></div>
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                    <div class="box box4"></div>
+                    <div class="box box5"></div>
+                </div>
+                <div class='row row2'>
+                    <div class="box box1"></div>
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                    <div class="box box4"></div>
+                    <div class="box box5"></div>
+                </div>
+                <div class='row row3'>
+                    <div class="box box1"></div>
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                    <div class="box box4"></div>
+                    <div class="box box5"></div>
+                </div>
+                <div class='row row4'>
+                    <div class="box box1"></div>
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                    <div class="box box4"></div>
+                    <div class="box box5"></div>
+                </div>
+                <div class='row row5'>
+                    <div class="box box1"></div>
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                    <div class="box box4"></div>
+                    <div class="box box5"></div>
+                </div>
+                <div class='row row6'>
+                    <div class="box box1"></div>
+                    <div class="box box2"></div>
+                    <div class="box box3"></div>
+                    <div class="box box4"></div>
+                    <div class="box box5"></div>
+                </div>
+                <!-- <img src="./assets/imgs/www.nytimes.com_games_wordle_index.html.png"> -->
+            </div>
+            <div id="keyboardFrame">
+                <div class="keyboard">
+                    <div class="keyRow">
+                        <button data-key="q" class="">q</button>
+                        <button data-key="w">w</button>
+                        <button data-key="e">e</button>
+                        <button data-key="r">r</button>
+                        <button data-key="t">t</button>
+                        <button data-key="y">y</button>
+                        <button data-key="u">u</button>
+                        <button data-key="i">i</button>
+                        <button data-key="o">o</button>
+                        <button data-key="p">p</button>
+                    </div>
+                    <div class="keyRow">
+                        <div class="spacer half"></div>
+                        <button data-key="a">a</button>
+                        <button data-key="s">s</button>
+                        <button data-key="d">d</button>
+                        <button data-key="f">f</button>
+                        <button data-key="g">g</button>
+                        <button data-key="h">h</button>
+                        <button data-key="j">j</button>
+                        <button data-key="k">k</button>
+                        <button data-key="l">l</button>
+                        <div class="spacer half"></div>
+                    </div>
+                    <div class="keyRow">
+                        <button data-key="↵" class="one-and-a-half">enter</button>
+                        <button data-key="z">z</button>
+                        <button data-key="x">x</button>
+                        <button data-key="c">c</button>
+                        <button data-key="v">v</button>
+                        <button data-key="b">b</button>
+                        <button data-key="n">n</button>
+                        <button data-key="m">m</button>
+                        <button data-key="←" class="one-and-a-half">
+                            <game-icon icon="backspace">
+                            </game-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </main>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
